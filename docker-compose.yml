@@ -1,0 +1,11 @@
+version: '3.7'
+
+services:
+  dummy-bot:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - './:/usr/src'
+    env_file:
+      - .env
